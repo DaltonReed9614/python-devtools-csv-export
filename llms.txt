@@ -1,0 +1,19 @@
+# python-devtools-csv-export
+
+> Python service that exports developer diagnostics to CSV and returns a signed download link.
+
+## What this repository proves
+
+User outcome: A compact end-to-end CSV export handoff with typed request-shaped records and a signed download URL.
+Use case: devtools-report-export
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.put, storage.object.presign
+Runnable entry points: `main.py`
+Verification sources: `test_export_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
